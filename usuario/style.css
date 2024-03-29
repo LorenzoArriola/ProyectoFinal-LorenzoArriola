@@ -1,0 +1,284 @@
+/* Establecer estilos predeterminados para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white; /* Establecer color de texto predeterminado */
+}
+
+/* Estilos para el cuerpo (body) de la página */
+body {
+    font-family: 'Space Grotesk', sans-serif; /* Establecer fuente predeterminada para el cuerpo */
+    background-color: #141C29; /* Establecer color de fondo */
+    padding-top: 80px; /* Agregar espacio superior para evitar que el encabezado (header) se superponga al contenido */
+}
+
+/* Estilos para los encabezados (h1) */
+h1 {
+    font-family: 'Montserrat', sans-serif; /* Establecer fuente para los títulos */
+    text-align: center; /* Centrar el texto */
+    margin: 30px 0px; /* Agregar margen superior e inferior */
+}
+
+/* Estilos para las imágenes */
+img {
+    width: 320px; /* Establecer ancho máximo */
+    height: 340px; /* Establecer altura máxima */
+    object-fit: cover; /* Ajustar la imagen para que cubra el contenedor */
+    border-radius: 20px 20px 0px 0px; /* Agregar esquinas redondeadas en la parte superior */
+}
+
+/* Estilos para el encabezado (header) */
+header {
+    display: flex; /* Usar un contenedor flexible */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 15%; /* Espacio entre elementos */
+    height: 70px; /* Altura del encabezado */
+    top: 0; /* Colocar en la parte superior */
+    position: fixed; /* Fijar en la parte superior de la ventana */
+    width: 100%; /* Ancho completo */
+}
+
+/* Estilos para el encabezado (header) cuando se desplaza (scroll) */
+.scroll {
+    background-color: aliceblue; /* Cambiar color de fondo */
+    box-shadow: .1rem .2rem .3rem #333; /* Agregar sombra */
+}
+
+/* Estilos para el ícono del carrito de compras */
+.carrito {
+    filter: invert(100%); /* Invertir los colores para que sea blanco */
+    width: 45px; /* Tamaño del ícono */
+    height: auto; /* Altura automática */
+    position: absolute; /* Posición absoluta */
+    top: 14px; /* Posicionar desde la parte superior */
+    cursor: pointer; /* Cambiar cursor a apuntador */
+}
+
+/* Estilos para el contenedor principal de productos */
+.contenedor {
+    display: flex; /* Usar un contenedor flexible */
+    justify-content: center; /* Centrar horizontalmente */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    gap: 50px; /* Espacio entre elementos */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos para los elementos dentro del contenedor principal */
+.contenedor > div {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75); /* Agregar sombra */
+    background-color: #2D4263; /* Color de fondo */
+    border-radius: 20px; /* Esquinas redondeadas */
+}
+
+/* Estilos cuando se pasa el cursor sobre los elementos del contenedor principal */
+.contenedor > div:hover {
+    background-color: #11294d; /* Cambiar color de fondo al pasar el cursor */
+}
+
+/* Estilos para la información del producto */
+.informacion {
+    height: 150px; /* Altura del contenedor */
+    display: flex; /* Usar un contenedor flexible */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    flex-direction: column; /* Apilar elementos verticalmente */
+    gap: 15px; /* Espacio entre elementos */
+}
+
+/* Estilos para el primer párrafo dentro de .informacion */
+.informacion>p:first-child {
+    font-family: 'Montserrat', sans-serif; /* Establecer fuente */
+    font-size: 25px; /* Tamaño de fuente */
+    font-weight: 300; /* Grosor de fuente */
+}
+
+/* Estilos para el precio del producto */
+.informacion .precio {
+    font-size: 20px; /* Tamaño de fuente */
+    font-weight: 500; /* Grosor de fuente */
+}
+
+/* Estilos para el botón dentro de .informacion */
+.informacion button {
+    background-color: #263143; /* Color de fondo */
+    width: 100px; /* Ancho del botón */
+    height: 35px; /* Altura del botón */
+    border-radius: 10px; /* Esquinas redondeadas */
+    border: none; /* Sin borde */
+    font-size: 17px; /* Tamaño de fuente */
+    font-weight: 300; /* Grosor de fuente */
+    cursor: pointer; /* Cambiar cursor a apuntador */
+}
+
+/* Estilos cuando se pasa el cursor sobre el botón */
+.informacion button:hover {
+    background-color: #2D4263; /* Cambiar color de fondo al pasar el cursor */
+}
+
+/* Estilos para el número de elementos en el carrito */
+.diseñoNumero {
+    padding: 10px; /* Espaciado interno */
+    background-color: red; /* Color de fondo */
+    border-radius: 100%; /* Hacer el contenedor circular */
+    width: 20px; /* Ancho del contenedor */
+    height: 20px; /* Altura del contenedor */
+    font-size: 10px; /* Tamaño de fuente */
+    position: relative; /* Posición relativa */
+    top: -12px; /* Posicionar desde la parte superior */
+    left: 30px; /* Posicionar desde la izquierda */
+    z-index: 1; /* Establecer z-index */
+    display: flex; /* Usar un contenedor flexible */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+/* Estilos para el contenedor de compra */
+.contenedorCompra {
+    display: flex; /* Usar un contenedor flexible */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    position: fixed; /* Fijar posición */
+    top: 0px; /* Posicionar desde la parte superior */
+    background-color: rgba(51, 51, 51, 0.6); /* Color de fondo semitransparente */
+    flex-direction: column; /* Apilar elementos verticalmente */
+    gap: 35px; /* Espacio entre elementos */
+}
+
+/* Estilos para la información de compra */
+.informacionCompra {
+    width: 500px; /* Ancho del contenedor */
+    height: 500px; /* Altura del contenedor */
+    background-color: #2D4263; /* Color de fondo */
+    border-radius: 25px; /* Esquinas redondeadas */
+    display: flex; /* Usar un contenedor flexible */
+    align-items: flex-start; /* Alinear elementos en la parte superior */
+    justify-content: flex-start; /* Alinear elementos a la izquierda */
+    position: fixed; /* Fijar posición */
+}
+
+/* Estilos para el título dentro de .informacionCompra */
+.informacionCompra h2 {
+    font-weight: 300; /* Grosor de fuente */
+    margin: 50px 0px 0px 50px; /* Margen superior, derecho, inferior e izquierdo */
+    font-size: 32px; /* Tamaño de fuente */
+    width: 100%; /* Ancho completo */
+}
+
+/* Estilos para el botón de cerrar (x) */
+.x {
+    padding-top: 30px; /* Espaciado superior */
+    padding-right: 30px; /* Espaciado derecho */
+    cursor: pointer; /* Cambiar cursor a apuntador */
+    font-size: 20px; /* Tamaño de fuente */
+    color: white; /* Color de texto */
+}
+
+/* Estilos para los productos en el carrito */
+.productosCompra {
+    font-size: 17px; /* Tamaño de fuente */
+    position: relative; /* Posición relativa */
+    z-index: 1; /* Establecer z-index */
+    display: flex; /* Usar un contenedor flexible */
+    justify-content: flex-start; /* Justificar contenido a la izquierda */
+    flex-direction: column; /* Apilar elementos verticalmente */
+    width: 450px; /* Ancho del contenedor */
+    height: 30%; /* Altura del contenedor */
+    overflow-y: auto; /* Permitir desplazamiento vertical */
+    margin-top: 50px; /* Margen superior */
+}
+
+/* Estilos para cada producto en el carrito */
+.productosCompra > div {
+    margin: 0px 45px; /* Margen superior e inferior */
+    padding: 20px 0px; /* Relleno */
+    width: auto; /* Ancho automático */
+    border-bottom: 1px dotted black; /* Borde inferior punteado */
+    display: flex; /* Usar un contenedor flexible */
+    justify-content: space-between; /* Distribuir espacio entre elementos */
+}
+
+/* Estilos para la barra de desplazamiento */
+.productosCompra::-webkit-scrollbar {
+    width: 7px; /* Ancho de la barra */
+    background-color: #141C29; /* Color de fondo */
+    border-radius: 5px; /* Esquinas redondeadas */
+}
+
+/* Estilos para el pulgar de la barra de desplazamiento */
+.productosCompra::-webkit-scrollbar-thumb {
+    background: white; /* Color del pulgar */
+    border-radius: 3px; /* Esquinas redondeadas */
+}
+
+/* Estilos para la imagen dentro de .productosCompra */
+.productosCompra img {
+    width: 25px; /* Ancho de la imagen */
+    height: auto; /* Altura automática */
+    margin-right: 10px; /* Margen derecho */
+    border-bottom: none; /* Sin borde en la parte inferior */
+    cursor: pointer; /* Cambiar cursor a apuntador */
+}
+
+/* Estilos para el total de la compra */
+.total {
+    z-index: 1; /* Establecer z-index */
+    display: flex; /* Usar un contenedor flexible */
+    align-items: flex-start; /* Alinear elementos en la parte superior */
+    justify-content: space-between; /* Distribuir espacio entre elementos */
+    gap: 150px; /* Espacio entre elementos */
+    font-size: 27px; /* Tamaño de fuente */
+    font-weight: 700; /* Grosor de fuente */
+}
+
+/* Estilos para el texto dentro de .total */
+.total span {
+    font-weight: 300; /* Grosor de fuente */
+}
+
+/* Estilos para el botón dentro de .contenedorCompra */
+.contenedorCompra > button {
+    z-index: 1; /* Establecer z-index */
+    background-color: #263143; /* Color de fondo */
+    width: 300px; /* Ancho del botón */
+    height: 45px; /* Altura del botón */
+    border-radius: 10px; /* Esquinas redondeadas */
+    border: none; /* Sin borde */
+    font-size: 17px; /* Tamaño de fuente */
+    font-weight: 300; /* Grosor de fuente */
+}
+
+/* Estilos cuando se pasa el cursor sobre el botón */
+.contenedorCompra > button:hover {
+    background-color: white; /* Cambiar color de fondo al pasar el cursor */
+    color: black; /* Cambiar color de texto al pasar el cursor */
+}
+
+/* Estilos para ocultar elementos */
+.none > div,
+.none button, 
+.none p {
+    width: 0px; /* Ancho cero */
+    height: 0px; /* Altura cero */
+    font-size: 0px; /* Tamaño de fuente cero */
+    border: 0px; /* Sin borde */
+}
+
+/* Estilos para productos agotados */
+.soldOut {
+    background-color: red; /* Color de fondo */
+    padding: 7px 10px; /* Relleno */
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+
+/* Estilos para el botón de eliminar */
+.botonTrash {
+    background-color: rgba(0, 0, 0, 0); /* Color de fondo transparente */
+    border: none; /* Sin borde */
+    display: flex; /* Usar un contenedor flexible */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}

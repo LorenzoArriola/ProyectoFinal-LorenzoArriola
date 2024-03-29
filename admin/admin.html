@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+
+    <!-- Enlaces a archivos CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../principal.css">
+
+    <!-- Enlaces a fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header id="header">
+        <h1>Shopping Car</h1>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <div class="contenedor">
+            <!-- Formulario para añadir productos -->
+            <div class="añadir">
+                <h2>Añadir</h2>
+                <form>
+                    <label>Nombre del producto</label>
+                    <input type="text" id="productoAñadir" name="nombreDelProducto">
+
+                    <label>Valor del producto</label>
+                    <input type="number" id="valorAñadir">
+
+                    <label>Existencia</label>
+                    <input type="number" id="existenciaAñadir">
+
+                    <label>Url Imagen</label>
+                    <input type="text" id="ImagenAñadir">
+
+                    <input class="button" type="button" id="botonAñadir" value="Añadir">
+                </form>
+            </div>
+
+            <!-- Formulario para editar productos -->
+            <div class="editar">
+                <h2>Editar</h2>
+                <form>
+                    <label>Nombre del producto</label>
+                    <select id="productoEditar">
+                        <option value="">---</option>
+                    </select>
+
+                    <label>Atributo</label>
+                    <select id="atributoEditar">
+                        <option value="">---</option>
+                    </select>
+
+                    <label>Nuevo valor</label>
+                    <input type="text" id="nuevoAtributo">
+
+                    <input class="button" type="button" id="botonEditar" value="Editar">
+                </form>
+            </div>
+
+            <!-- Formulario para eliminar productos -->
+            <div class="eliminar">
+                <h2>Eliminar</h2>
+                <form>
+                    <label>Nombre del producto</label>
+                    <select id="productoEliminar">
+                        <option value="">---</option>
+                    </select>
+                    <input class="button" type="button" id="botonEliminar" value="Eliminar">
+                </form>
+            </div>
+        </div>
+
+        <!-- Contenedor para mostrar mensajes -->
+        <div class="contenedorMensaje">
+            <div id="mensaje"></div>
+        </div>
+
+        <!-- Contenedor para mostrar los productos -->
+        <div class="contenedorProductos">
+            <h2>Productos</h2>
+            <div class="mostrarProductos" id="mostrarProductos"></div>
+        </div>
+    </main>
+
+    <!-- Botón para volver a la página principal -->
+    <main class="boton">
+        <div class="volver">
+            <button class="bot"> <a href="../principal.html">VOLVER</a></button>
+        </div>
+    </main>
+
+    <!-- Archivo JavaScript -->
+    <script src="admin.js"></script>
+</body>
+
+</html>

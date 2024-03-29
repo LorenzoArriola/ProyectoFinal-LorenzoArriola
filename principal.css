@@ -1,0 +1,21 @@
+/*boton*/
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.volver {
+    margin: 0 10px; /* Añade un espacio entre los botones */
+}
+
+.bot {
+    padding: 15px 30px; /* Ajusta el tamaño del botón */
+    font-size: 16px; /* Tamaño del texto */
+    background-color: #2D4263;
+}
+a{
+    text-decoration: none;
+    
+}

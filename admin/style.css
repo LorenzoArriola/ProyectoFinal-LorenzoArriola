@@ -1,0 +1,189 @@
+/* Estilos generales para restablecer el diseño predeterminado de los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #141C29;
+    padding-top: 80px;
+}
+
+/* Estilos para el encabezado h1 */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+/* Estilos para las imágenes */
+img {
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    height: 70px;
+    width: 100%;
+}
+
+/* Estilos para el contenedor principal */
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px auto 45px auto;
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Estilos para cada elemento dentro del contenedor */
+.contenedor>div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #2D4263;
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    flex-direction: column;
+    padding-top: 35px;
+    gap: 25px;
+    flex: 1 1 300px;
+}
+
+/* Estilos para los formularios dentro del contenedor */
+.contenedor>div>form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Estilos para los inputs y selects dentro de los formularios */
+.contenedor>div>form>input,
+select {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    color: black;
+}
+
+/* Estilos para las opciones de los selects */
+option{
+    color: black;
+}
+
+/* Estilos para los botones dentro del contenedor */
+.contenedor .button {
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    color: black;
+}
+
+/* Estilos para el título de la sección de productos */
+.contenedorProductos h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+/* Estilos para el contenedor de productos */
+.mostrarProductos {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+/* Estilos para cada producto dentro del contenedor de productos */
+.mostrarProductos>div {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: #2D4263;
+    border-radius: 20px;
+}
+
+/* Estilos para la información de los productos */
+.informacion {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilos para el primer párrafo de información */
+.informacion>p:first-child {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+/* Estilos para el precio de los productos */
+.informacion .precio {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Estilos para los mensajes de error y éxito */
+.contenedorMensaje {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    height: 70px;
+}
+
+.repetidoError,
+.realizado,
+.llenarCampos,
+.noExsiteError {
+    margin: 15px 0px;
+}
+
+/* Estilos para los mensajes de error y éxito después del texto */
+.repetidoError::after,
+.realizado::after,
+.llenarCampos::after,
+.noExsiteError::after {
+    background-color: red;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Estilos específicos para diferentes tipos de mensajes */
+.realizado::after {
+    content: 'Realizado';
+    background-color: green;
+}
+
+.repetidoError::after {
+    content: 'Este elemento ya existe';
+}
+
+.llenarCampos::after {
+    content: 'Por favor compruebe que todos los campos estan llenos';
+}
+
+.noExsiteError::after {
+    content: 'Este elemento no existe';
+}

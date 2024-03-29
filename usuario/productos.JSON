@@ -1,0 +1,21 @@
+[
+    {
+      "nombre": "Laptop",
+      "urlImagen": "../img/Productos/imagen1.webp",
+      "valor": 500,
+      "existencia": 5
+    },
+    {
+      "nombre": "Laptop 2",
+      "urlImagen": "../img/Productos/imagen2.webp",
+      "valor": 600,
+      "existencia": 3
+    },
+    {
+      "nombre": "Laptop 3",
+      "urlImagen": "../img/Productos/imagen3.webp",
+      "valor": 700,
+      "existencia": 0
+    }
+  ]
+  
